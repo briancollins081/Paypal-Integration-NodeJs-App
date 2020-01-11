@@ -1,0 +1,77 @@
+<style>
+    html {
+        color: white;
+        text-shadow: 0 0 1px black;
+        background-size: 100% 100%;
+        background-image: url("/img/squatchy.jpg");
+    }
+
+    p {
+        padding: 5px;
+        background-color: rgba(1, 1, 1, 0.5);
+    }
+
+    ul {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: rgba(1, 1, 1, 0.5);
+    }
+
+    h2,
+    h3 {
+        color: #1d1d1d;
+    }
+
+    .btn {
+        border-radius: 5px;
+        border: none;
+        padding: 5px;
+        color: white;
+        background-color: #1d1d1d;
+    }
+
+    .btn:hover {
+        color: green;
+    }
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <hr>
+        <h2>Help save Squatch Population</h2>
+        <hr>
+        <form action="/buysingle" method="post">
+            <h3>Buy Habitat Starter Kit</h3>
+            $10.00
+            <br>
+            Quantity: 
+            <input type="number" name="quantity" id="quantity" min="1" value="1" style="width: 50px;" class="btn"/>
+            <input type="submit" value="Purchase" class="btn"/>
+            <br>
+            <p>Starter packege comes with everything your Sasquatch needs when living in the wild.</p>
+            <p>This plan includes:</p>
+            <ul>
+                <li>1 Month of Supply of Food</li>
+                <li>1 Month of Supply of Water</li>
+                <li>1 Month of Supply of Grass Bedding</li>
+                <li>1 Month of Supply of Toys</li>
+            </ul>
+        </form>
+        <hr>
+        <form action="/buyrecurring" method="post">
+            <h3>Rent Maintained Habitat</h3>
+            $10.00 a Month
+            <input type="submit" value="Purchase" class="btn"/>
+            <br>
+            <p>This package comes with the Starter Kit and refills supplies every month.</p>
+        </form>
+    </div>
+</body>
+</html>

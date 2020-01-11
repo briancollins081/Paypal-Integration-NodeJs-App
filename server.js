@@ -29,19 +29,19 @@
     })
 
     server.get('/recurring_success/:planId', (req, res) => {
-
+        const planId = req.params.planId;
     })
 
     server.get('/recurring_cancel/:planId', (req, res) => {
-
+        const planId = req.params.planId;
     })
 
     server.get('/recurring_orderdetails/:agreementId', (req, res) => {
-
+        const agreementId = req.params.agreementId;
     })
 
     server.get('/buysingle', (req, res) => {
-
+        const quantity = req.body.quantity;
     })
 
     server.get('/buyrecurring', (req, res) => {
